@@ -1,0 +1,63 @@
+steps:
+  REGION-721f80bc-318f-47e9-93e6-07a8b19aa8d1:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 43390ad4-44ef-40a9-b6f2-4283ec8f198e
+              stepCounter: 721f80bc-318f-47e9-93e6-07a8b19aa8d1
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5de0df71-fc46-4386-9173-efd510251a57
+              stepCounter: 721f80bc-318f-47e9-93e6-07a8b19aa8d1
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 81b6c5ef-a328-4b7e-bebf-1fc68078662e
+              stepCounter: 721f80bc-318f-47e9-93e6-07a8b19aa8d1
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 721f80bc-318f-47e9-93e6-07a8b19aa8d1
